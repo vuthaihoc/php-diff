@@ -1,5 +1,5 @@
 {
-    "name": "jblond/php-diff",
+    "name": "123dok/php-diff",
     "type": "library",
     "description": "A comprehensive library for generating differences between two hashable objects (strings or arrays).",
     "license": "BSD-3-Clause",
