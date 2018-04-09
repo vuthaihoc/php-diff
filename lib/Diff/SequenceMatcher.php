@@ -144,7 +144,7 @@ class Diff_SequenceMatcher
 	public function setSeq1($a)
 	{
 		if(!is_array($a)) {
-			$a = str_split($a);
+			$a = preg_split("//u", $a);
 		}
 		if($a == $this->a) {
 			return;
@@ -164,7 +164,7 @@ class Diff_SequenceMatcher
 	public function setSeq2($b)
 	{
 		if(!is_array($b)) {
-			$b = str_split($b);
+			$b = preg_split("//u", $b);
 		}
 		if($b == $this->b) {
 			return;
@@ -714,3 +714,4 @@ class Diff_SequenceMatcher
 		}
 	}
 }
+
